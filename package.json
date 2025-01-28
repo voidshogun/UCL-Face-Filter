@@ -9,13 +9,14 @@
     "url": "https://github.com/richardevcom/vue3-boilerplate.git"
   },
   "scripts": {
-    "dev": "vite --config='vite.config.dev.mjs'",
-    "build": "vite build  --config='vite.config.prod.mjs'",
-    "preview": "vite preview --config='./vite.config.prod.mjs'",
+    "dev": "vite --host --config=vite.config.dev.mjs",
+    "build": "vite build  --config=vite.config.prod.mjs",
+    "preview": "vite preview --config=./vite.config.prod.mjs",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "html2canvas": "^1.4.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
